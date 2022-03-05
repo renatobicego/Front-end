@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+/*Banner */
+header {
+    background-image: url("../img/descarga.png");
+    width: 1440px;
+    background-repeat: repeat;
+    height: 200px;
+}
+.personal-img {
+    height: 147px;
+    text-align: center;
+    padding: 21px;
+}
+.sobre-mi {
+    padding: 30px;
+    text-align: center;
+}
+.sobre-mi-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: #0b7c8c;
+    padding: 30px;
+}
+
+
+/*Rectangles */
+.titles-background{
+    width: 1440px;
+    background: #f3f3f3;
+}
+h1, h3 {
+    font-weight: 700;
+    line-height: 84.69%;
+    color: #fb5b5b;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding-top: 1%;
+}
+
+/*Rectangle 1 */
+h1 {
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.h1-background {
+    height: 60px;
+    margin-top: -15px;
+}
+.parrafo-intro {
+    padding: 10px 45px;
+}
+
+/* Rectangle 2, 3 and 4 */
+h3 {
+    color: #0b7c8c;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 5px;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+.bold {
+    font-weight: bold;
+}
+.ul-datos-personales li{
+    padding: 8px;
+}
+.indented-item {
+    margin-left: 108px;
+}
+.indented-item-3 {
+    margin-left: 185px;
+}
+.indented-item-4 {
+    margin-left: 205px;
+}
+
+.rectangle3 {
+    margin-bottom: 147px;
+}
+
+/* Footer */
+footer {
+    background-color: #84c3a3;
+    height: 37px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    
+}
+footer div {
+    padding-top: 5px;
+}
+footer div p {
+    display: inline;
+    padding-right: 10px;
+}
+footer div a {
+    padding: 10px;
+}
+.github-img {
+    height: 25px;
+}
