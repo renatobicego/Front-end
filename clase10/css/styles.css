@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Banner */
+.descuentos-banner {
+    width: 100%;
+    background: #1CD1B0;
+    margin-top: -18px;
+    height: 38px;
+    box-sizing: border-box;
+}
+.descuentos-banner p {
+    padding: 10px;
+}
+.banner-title {
+    width: 100%;
+    box-sizing: border-box;
+    height: 101px;
+    margin-top: -33px;
+    background: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+h1 {
+    font-size: 40px;
+    padding: 21px;
+    font-weight: 400;
+}
+
+/* Cards images*/
+main {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.heroe {
+    height: 527px;
+    margin-top: 148px;
+    margin-bottom: 151px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 90px;
+}
+.heroes-img {
+    position: relative;
+}
+.heroes-img i {
+    position: absolute;
+    left: 21px;
+    top: 30px;
+    color: #CC2424;
+}
+.heroe-icon {
+    position: absolute;
+    left: 90px;
+    top: 128px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* Card text */ 
+.uppercase {
+    text-transform: uppercase;
+}
+.heroes-text {   
+    background: #F3F3F3;
+    box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    height: 336px;
+    margin-top: -35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.heroe-title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    top: 73px;
+}
+.heroe-description {
+    position: relative;
+    top: 50px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.heroe-button {
+    position: relative;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: #00669F;
+    width: 128.78px;
+    height: 48.52px;
+    top: 70px;
+    left: 85px;
+}
+
+/* footer */
+
+footer {
+    background-color: #00669F;
+    height: 51px;
+    color: white;
+}
+footer p {
+    padding: 16px;
+}
