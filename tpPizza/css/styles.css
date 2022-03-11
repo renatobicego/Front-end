@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #E5E5E5;
+}
+
+/* Header */
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222222;
+}
+header img{
+    margin: 20px 30px;
+}
+.header-nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    gap: 15px
+}
+.header-item-link {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+.header-nav-item {
+    list-style-type: none;
+}
+
+/* Envio gratis banner */ 
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+.envio-gratis-banner {
+    height: 450px;
+    width: 50%;
+    background-image: url('../img/delivery.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.envio-gratis-banner h2 {
+    padding: 10px 30px;
+    color: #FC200C;
+    font-size: 27px;
+}
+.envio-gratis-banner span {
+    color: white;
+}
+
+/* Ranking */
+.ranking-banner {
+    width: 50%;
+    height: 450px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ranking-banner article {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    bottom: 90px;
+    justify-content: space-around;
+}
+.ranking-banner h2 {
+    padding-top: 13px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 28px;
+    color: #FC200C;
+}
+.top5 {
+    margin-left: 10px;
+}
+.top5 h3{
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+.top-item {
+    font-size: 18px;
+    padding-bottom: 17px;
+    position: relative;
+    right: 40px;
+    font-weight: 700;
+}
+.ranking-img {
+    height: 160px;
+}
+
+/* Footer (footer style above at header)*/
+
+.footer-nav-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 40px 30px;
+    gap: 15px
+}
+footer img {
+    margin: 30px 60px;
+}
