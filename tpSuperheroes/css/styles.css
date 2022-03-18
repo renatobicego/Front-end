@@ -10,7 +10,7 @@ body, html {
 
 .descuentos-banner {
     width: 100%;
-    background: #1CD1B0;
+    background: #D1891C;
     margin-top: -18px;
     height: 38px;
     box-sizing: border-box;
@@ -25,6 +25,7 @@ header {
 }
 .banner-title {
     position: sticky;
+    color: white;
     top: 0;
     z-index: 7;
     margin-top: -38px;
@@ -42,19 +43,21 @@ h1 {
 
 /* Cards images*/
 main {
-    margin-left: 32px;
-    margin-right: 32px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 .heroe {
-    height: 527px;
-    margin-top: 150px;
-    margin-bottom: 70px;
+    margin-top: 60px;
     box-sizing: border-box;
-    display: inline-block;
-    padding-left: 90px;
 }
 .heroes-img {
     position: relative;
+    width: 300px;
+    height: 198px;
 }
 .heroes-img i {
     position: absolute;
@@ -64,10 +67,16 @@ main {
 }
 .heroe-icon {
     position: absolute;
+    width: 40%;
     left: 90px;
     top: 128px;
     border-radius: 50%;
     z-index: 5;
+}
+.heroe-background {
+    max-width:100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 /* Card text */ 
@@ -79,8 +88,8 @@ main {
     box-sizing: border-box;
     position: relative;
     width: 300px;
-    height: 336px;
-    margin-top: -35px;
+    height: 340px;
+    margin-top: -37px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .heroe-title {
@@ -113,7 +122,43 @@ footer {
     background-color: #00669F;
     height: 51px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer p {
     padding: 16px;
+}
+footer img {
+    height: 25px;
+    position: absolute;
+    right: 30px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .banner-title {
+        margin-top: -30px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    footer img {
+        height: 20px;
+        right: 15px;
+    }
+}
+@media (max-width: 448px) {
+    footer {
+        display: block;
+        text-align: center;
+        height: 90px;
+    }
+    footer img {
+        height: 15px;
+        position: relative;
+        right: 0;
+    }
 }
