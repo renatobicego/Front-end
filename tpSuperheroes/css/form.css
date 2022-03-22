@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    border: none;
+}
+li {
+    list-style: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+}
+.mensaje-descuento {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    background: #1CD1B0;
+}
+.mensaje-descuento p {
+    padding-left: 20px;
+}
+header section {
+    display: flex;
+    align-items: center;
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+.nav-div {
+    background: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 7vh;
+}
+.nav-div nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*Form */
+main {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #FBFFFD;
+}
+main h3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px 20px 40px;
+}
+main section {
+    width: 66.25%;
+    color: white;
+    background: #00669F;
+    margin: 40px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 49.0901px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.form-div input, select {
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border-radius: 15.3407px;
+    background: #FFFFFF;
+    width: 25.19vw;
+    height: 63px;
+}
+.form-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.form-div div {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.especie-selected {
+    color: rgba(0, 0, 0, 0.5);
+}
+.foto-div label{
+    position: relative;
+    bottom: 10px;
+}
+#foto {
+    height: 32px;
+    background: none;
+    border: none;
+    position: relative;
+    bottom: 10px;
+    border-radius: 5px;
+}
+.form-div-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+legend {
+    font-family: 'Inter';
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 26px;
+}
+fieldset {
+    border: none;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    width: 25.19vw;
+    position: relative;
+    left: 11px;
+}
+hr {
+    width: 80%;
+}
+textarea {
+    font-family: 'Inter';
+    resize: none;
+    width: 25.19vw;
+    height: 307px;
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15.3407px;
+    padding: 20px 10px;
+}
+form button {
+    width: 466px;
+    margin: 10px 0px 30px;
+    height: 87px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+footer {
+    background-color: #00669F;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width: 769px) {
+    form button {
+        width: 40vw;
+        font-size: 5vw;
+        height: 57px;
+    }
+    h1 {
+        font-size: 6vw;
+    }
+    main h3 {
+        font-size: 4vw;
+    }
+    .form-div input, select {
+        width: 50vw;
+    }
+    textarea {
+        width: 50vw;
+    }
+    fieldset {
+        width: 50vw;
+    }
+}

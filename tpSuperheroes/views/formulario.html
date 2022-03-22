@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Añadí tu Súper</title>
+</head>
+<body>
+    <header>
+        <div class="mensaje-descuento">
+            <p>20% de descuento en todos los productos!</p>
+        </div>
+        <section>
+            <img src="../img/LogoForm.png" alt="">
+            <h3>Nombre Tienda</h3>
+        </section>
+        <div class="nav-div">
+            <nav>
+                <a href=""><li>Contacto</li></a>
+                <a href=""><li>Registrarme</li></a> 
+                <a href=""><li>Ingresar</li></a>
+                <a href="../index.html"><li>Superhéroes</li></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Añadí tu super!</h1>
+            <h3>Agregá tu personaje favorito completando las opciones.</h3>
+            <form action="POST">
+                <div class="form-div">
+                    <div>
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="especie">*Especie</label>
+                        <select class="especie-selected" name="especie" id="especie">
+                            <option  value="especie" disabled selected>Especie</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <div>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">                        
+                    </div>
+                    <div class="foto-div">
+                        <label for="foto">Agregar Foto</label>
+                        <input class="foto-input" type="file" id="foto" name="foto" accept=".jpg, .png"> 
+                    </div>      
+                </div>
+                <div class="form-div-1">
+                    <textarea placeholder="Descripción" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                    <div>
+                        <fieldset>
+                            <legend>Poderes</legend>
+                            <div>
+                                <input type="checkbox" name="" id="volar">
+                                <label for="volar">Volar</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="superinteligencia">
+                                <label for="superinteligencia">Superinteligencia</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="laser">
+                                <label for="laser">Vista de rayo láser</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="billetera">
+                                <label for="billetera">Billetera gorda</label>
+                            </div>
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <legend>Tipo de Personaje</legend>
+                            <div>
+                                <input type="radio" name="" id="heroe">
+                                <label for="heroe">Héroe / Heroína</label>     
+                            </div>
+                            <div>
+                                <input type="radio" name="" id="villano">
+                                <label for="villano">Villano / Villana</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                </div>
+                <button type="submit">Añadir</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
