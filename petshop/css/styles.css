@@ -4,6 +4,11 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Header banner mensaje*/
@@ -48,6 +53,10 @@ header {
     list-style-type: none;
     padding-right: 40px;
 }
+.menu-navegacion-mobile {
+    display: none;
+    margin: 20px;
+}
 .menu-navegacion li {
     padding-left: 20px;
 }
@@ -61,11 +70,15 @@ header {
     display: flex;
     justify-content: flex-end;
     height: 539px;
+    width: 100%;
     align-items: center;
 }
 .bienvenida-background-img {
     position: absolute;
-    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
     z-index: -4;
 }
 .bienvenida-text {
@@ -79,6 +92,8 @@ header {
     border-radius: 5px;
     font-weight: 400;
     margin-bottom: 16px;
+    margin-left: 24px;
+    text-align: center;
     padding: 15px;
     font-size: 40px;
 }
@@ -87,9 +102,11 @@ header {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 16px;
+    padding-right: 10px;
 }
 .bienvenida-text a {
     margin-top: 0;
+    padding-right: 20px;
 }
 .comederos-button {
     background: #F0A83E;
@@ -108,6 +125,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 .productos-header {
     display: flex;
@@ -140,6 +158,9 @@ header {
 /* Productos cards*/
 .productos-cards {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 30px;
     text-align: center;
     margin-bottom: 80px;
@@ -148,7 +169,7 @@ header {
     background: #FBFAF6;
 }
 .producto-card img {
-    height: 300px;
+    width: 100%;
 }
 .producto-title {
     color: #3C2313;
@@ -165,6 +186,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     align-items: center;
 }
 .contactanos h3 {
@@ -223,17 +245,19 @@ header {
 /* Footer */
 footer {
     margin-top: 90px;
+    width: 100%;
 }
 /* Subscribir section */
 .suscribir-novedades {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background: #F0A83E;
-    height: 100px;
 }
 .suscribir-novedades form{
     margin-right: 40px;
+    padding: 10px;
 }
 .suscribir-title {
     display: flex;
@@ -264,6 +288,7 @@ footer {
     width: 100px;
     padding: 13px;
     border-radius: 20px;
+    margin-top: 10px;
     border: none;
     background-color: #3C2313;
     color: white;
@@ -272,6 +297,7 @@ footer {
 /*Info section */
 .footer-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background: #3C2313;
@@ -308,6 +334,7 @@ footer {
 }
 .logo-footer {
     height: 30px;
+    margin: 20px;
 }
 
 .derechos-reservados {
@@ -316,4 +343,66 @@ footer {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+@media (max-width: 1020px){
+    .bienvenida-text {
+        align-items: flex-end;
+    }
+    .suscribir-novedades form {
+        margin-left: 20px;
+    }
+    .suscribir-title {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 769px){
+    .suscribir-novedades {
+        justify-content: center;
+    }
+    .suscribir-novedades form {
+        margin-right: 0;
+    }
+    .menu-navegacion {
+        display: none;
+    }
+    .mensaje-banner {
+        display: none;
+    }
+    .footer-info {
+        justify-content: center;
+    }
+    .logo-footer {
+        order: -1;
+    }
+    .menu-navegacion-mobile {
+        display: block;
+    }
+}
+@media (max-width: 484px) {
+    .bienvenida-text h2 {
+        font-size: 28px;
+    }
+    .bienvenida-text h4 {
+        font-size: 14px;
+    }
+    .comederos-button {
+        font-size: 14px;
+    }
+    .contactanos-form-input {
+        width: 70vw;
+    }
+    .suscribir-input {
+        width: 55vw;
+    }
+    .productos-header h2{
+        font-size: 28px;
+    }
+    .footer-info-text h4 {
+        font-size: 20px;
+    }
+    .derechos-reservados {
+        font-size: 14px;
+    }
 }
