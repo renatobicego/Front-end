@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+/*Global styles */
+* {
+    margin: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url('imagenes\bg-simplify-section-desktop.svg') repeat-y center;
+}
+button {
+    background-color: #F3603B;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: 100ms;
+    opacity: 0.9;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 75px 0px;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.header-nav a {
+    font-weight: 500;
+    font-size: 13px;
+    color: #242D52;
+}
+.header-nav a:hover {
+    font-weight: 600;
+    color: #F3603B
+}
+header svg {
+    display: none;
+}
+
+/*Main style */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* First banner */
+.principal-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 70px;
+}
+.principal-banner article{
+    width: 40%;
+}
+h1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 66px;
+    padding-bottom: 28px;
+    color: #232C50;
+}
+.principal-banner p {
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 26px;
+    width: 65%;
+    padding-bottom: 28px;
+}
+
+/* Second banner */ 
+.second-banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 84%;
+    margin-top: 40px;
+    gap: 125px;
+}
+.second-banner p {
+    line-height: 26px;
+}
+.second-banner h3 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #232851;
+    padding-bottom: 36px;
+    line-height: 45px;
+}
+.second-banner h4 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #232851;
+    padding-bottom: 18px;
+    padding-top: 10px;
+}
+.second-banner ol p {
+    color: #B3B2B7;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.second-banner li {
+    counter-increment: li
+}
+.second-banner ol {
+    position: relative;
+    width: 80%;
+    left: 20px;
+}
+.second-banner li::before {
+    content: counter(li);
+    position: absolute;
+    left: -40px;
+    background-color: #F3603B;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    color: white;
+}
+
+/* Experiences section */ 
+.experiences-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 70px;
+}
+.experiences-section h3 {
+    color: #242E53;
+    font-weight: 700;
+    font-size: 39.2143px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+.experiences-section article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.experiences-section div {
+    background: #FAFAFA;
+    padding: 0px 1.2% 35px;
+    margin-bottom: 45px;
+}
+.experiences-section h5 {
+    font-weight: 700;
+    color: #242E53;
+    font-size: 16px;
+    padding-bottom: 21px;
+}
+.experiences-section p {
+    color: #B9B9C1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 156.6%;
+}
+.experiences-section img {
+    height: 70px;
+    margin-bottom: -10px;
+    position: relative;
+    bottom: 35px;
+}
+
+
+/* Footer message */
+.footer-msg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3613C;
+    padding: 65px 11.11%;
+}
+.footer-msg h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    padding-right: 25%;
+    width: 50%;
+}
+.footer-msg button {
+    background-color: white;
+    color: #F3613C;
+}
+
+/* Footer menu */
+.footer-menu {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background: #1E1E26;
+    flex-wrap: wrap;
+    gap: 54.8px;
+    padding: 70px 11.11%;
+}
+.footer-menu-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-menu-social img {
+    padding-right: 13px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.footer-menu-nav {
+    display: flex;
+    width: 30%;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-menu-nav ul {
+    padding: 0;
+}
+.footer-menu-nav li {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+.footer-menu-nav li:hover {
+    color: #F3603B
+}
+
+.footer-menu input {
+    background: #FFFFFF;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    border-radius: 50px;
+    border: none;
+    padding: 12px 48px 12px 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    outline: none;
+}
+.footer-menu input:valid {
+    color: rgb(42, 187, 42);
+}
+.footer-menu input:invalid {
+    color: crimson;
+    outline: 1px solid crimson;
+}
+.footer-menu p {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 12.5px;
+    color: #8C8C94;
+    margin-top: 20px;
+}
+@media (max-width: 1106px){
+    .principal-banner {
+        justify-content: center;
+        padding: 0;
+    }
+    .principal-banner img {
+        order: -1;
+        width: 90%;
+    }
+    .principal-banner article {
+        width: 80%;
+        text-align: center;
+    }
+    .principal-banner p {
+        color: #B9B9C1;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 156.6%;
+    }
+    .second-banner {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .second-banner h3 {
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+    .second-banner article:first-child {
+        text-align: center;
+        color: #B9B9C1;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 156.6%;
+    }
+    .footer-menu p {
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 850px){
+    header nav {
+        display: none;
+    }
+    header a {
+        display: none;
+    }
+    header svg {
+        display: inline-block;
+    }
+    header {
+        gap: 35%;
+    }
+    .experiences-section {
+        width: 100%;
+    }
+    .experiences-section div:nth-child(odd){
+        display: none;
+    }
+    .experiences-section div:nth-child(even){
+        padding: 0px 5% 35px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 684px){
+    .footer-msg{
+        justify-content: center;
+    }
+    .footer-msg h3 {
+        text-align: center;
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+    .footer-menu-nav {
+        justify-content: space-between;
+        width: 90%;
+    }
+    .footer-menu-social img:first-child{
+        order: 1;
+        margin-top: 20px;
+    }
+    .footer-form {
+        order: -2;
+    }
+    .footer-menu-nav {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .second-banner h3 {
+        font-size: 27px;
+    }
+    .experiences-section h3 {
+        font-size: 29px;
+    }
+    .principal-banner article {
+        width: 90%;
+    }
+    .second-banner ol p {
+        width: 130%;
+        position: relative;
+        right: 27%;
+        font-size: 13px;
+    }
+    .footer-menu {
+        padding: 70px 20px;
+    }
+    .footer-form {
+        width: 100%;
+    }
+    .footer-menu input {
+        width: 54%;
+    }
+    .footer-menu-nav li {
+        color: white;
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 12px;
+        line-height: 24px;
+    }
+}
