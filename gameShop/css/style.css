@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+
+/*Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #222222;
+    align-items: center;
+    width: 100%;
+}
+header h1{
+    padding: 2% 3%;
+}
+header nav {
+    padding-right: 3%;
+}
+header nav, header ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+header nav img {
+    margin-left: 10px;
+}
+.hamburger-logo {
+    display: none;
+}
+
+/* Banner principal */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff2f2;
+}
+.banner-ppal {
+    background: url('../img/bg.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    font-size: 35px;
+    box-sizing: border-box;
+    height: 570px;
+    padding: 180px 30px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+}
+.banner-ppal span {
+    color: #D01418;
+}
+.banner-ppal button {
+    background: #D01418;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #F3F3F3;
+    padding: 16px 60px;
+    margin-top: 50px;
+}
+
+/*Productos*/
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 70px;
+    width: 100%;
+}
+.destacados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.destacados h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+.destacados-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.destacados-cards > div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 270px;
+    box-sizing: border-box;
+    height: 350px;
+    padding: 25px;
+}
+.destacados-cards img {
+    width: 70%;
+}
+.destacados-cards div div {
+    align-self: flex-start;
+}
+.destacados h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+.destacados h5 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+.destacados p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #619D00;
+}
+
+.estrellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.estrellas div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    
+}
+.estrellas h3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+.estrellas h4 {
+    font-weight: 400;
+    padding-top: 60px;
+    box-sizing: border-box;
+    width: 400px;
+    margin: 0px 50px;
+    height: 150px;
+    padding-right: 15px;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: right;
+    color: #F3F3F3;
+}
+.estrellas h4:first-child{
+    background: url('../img/banner 1.png') no-repeat bottom;
+    background-size: cover;
+    
+}
+.estrellas h4:last-child {
+    background: url('../img/banner 2.png') no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+footer div:first-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    background: #222222;
+}
+.logo-footer {
+    margin: 80px 70px;
+}
+footer h5 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #F3F3F3;
+}
+footer nav {
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+footer div:last-child{
+    background: #C4C4C4;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 631px){
+    footer div:first-child{
+        justify-content: center;
+    }
+    .logo-footer {
+        margin: 40px 70px ;
+    }
+    .hamburger-logo{
+        margin-right: 3%;
+        display: block;
+    }
+    header nav {
+        display: none;
+    }
+    .banner-ppal {
+        font-size: 25px;
+        background-position: left;
+        padding-top: 130px
+    }
+    .banner-ppal button {
+        font-size: 20px;
+    }
+}
