@@ -1,0 +1,143 @@
+body, html {
+  margin: 10px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2, .banner article::before {
+  font-family: "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+}
+
+/*Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header nav {
+  width: 40%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+header nav ul a {
+  color: black;
+}
+
+/* Principal banner */
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.banner article {
+  width: 50%;
+}
+.banner article h2, .banner article article::before {
+  width: 60%;
+}
+.banner article::before {
+  position: absolute;
+  top: 145px;
+  left: 99px;
+  content: " ";
+  letter-spacing: 12px;
+  width: 215px;
+  z-index: -1;
+  height: 40px;
+  background-color: #03faee;
+}
+.banner article p {
+  line-height: 35px;
+  color: #8b8b8b;
+}
+.banner article button {
+  background-color: #03faee;
+  border: 1px dashed black;
+  height: 70px;
+  width: 140px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.banner img {
+  width: 49%;
+}
+
+.cards {
+  width: 100%;
+  margin-top: 50px;
+}
+.cards ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 40px;
+}
+.cards ol li {
+  background-color: #f8f8f8;
+  padding: 0px 20px;
+  position: relative;
+}
+.cards ol li h5 {
+  width: 14px;
+  padding: 13px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 7px -10px;
+  box-shadow: -5px 0px #92f7f2;
+}
+.cards ol li h4, .cards ol li li::before {
+  position: relative;
+  z-index: 1;
+}
+.cards ol li::before {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  content: " ";
+  letter-spacing: 12px;
+  width: 20px;
+  height: 10px;
+  background-color: #03faee;
+}
+.cards ol li p {
+  margin-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+footer nav {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: -5px 0px #92f7f2;
+}/*# sourceMappingURL=style.css.map */
